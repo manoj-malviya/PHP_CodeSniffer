@@ -16,8 +16,8 @@
     ],
     "support": {
         "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
-        "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki",
-        "source": "https://github.com/squizlabs/PHP_CodeSniffer"
+        "wiki": "https://github.com/manoj-malviya/PHP_CodeSniffer/wiki",
+        "source": "https://github.com/manoj-malviya/PHP_CodeSniffer"
     },
     "extra": {
         "branch-alias": {
