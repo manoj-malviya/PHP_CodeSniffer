@@ -69,3 +69,9 @@ function multiLineFunction(
 
 function myFunc($req, $opt=null, ...$params) {}
 function myFunc($param, &...$moreParams) {}
+
+function MissingParamTypeInDocBlock(array$a = null, callable$c, \ArrayObject$o, $foo = []) {}
+
+function myFunc(...$args) {}
+function myFunc( ...$args) {}
+function myFunc(... $args) {}

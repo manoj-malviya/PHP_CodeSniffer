@@ -24,3 +24,10 @@ $foo(&$myvar);
 
 if (is_array($foo = &$this->bar())) {
 }
+
+Hooks::run( 'SecondaryDataUpdates', [ $title, $old, $recursive, $parserOutput, &$updates ] );
+
+$foo = Bar(&$fooBar);
+
+myfunc($myvar&$myvar);
+myfunc($myvar[0]&$myvar);

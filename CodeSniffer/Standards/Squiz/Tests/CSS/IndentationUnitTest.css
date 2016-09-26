@@ -56,3 +56,17 @@ td {
 .GUIFileUpload {
 /*     opacity: 0.25; */
 }
+
+.foo
+{
+    border: none;
+}
+
+.mortgage-calculator h2 {
+        background: #072237;
+        color: #fff;
+        font-weight: normal;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 0 0 30px;
+    }

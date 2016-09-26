@@ -142,3 +142,42 @@ foreach($stuff as $num)
 if ($foo) echo 'foo';
 elseif ($bar) echo 'bar';
 else echo 'baz';
+
+switch ($type) {
+    case 1:
+        if ($foo) {
+            return true;
+        } elseif ($baz)
+            return true;
+        else {
+            echo 'else';
+        }
+    break;
+}
+
+foreach ($sql as $s)
+        if (!$this->execute) echo "<pre>",$s.";\n</pre>";
+        else {
+            $ok = $this->connDest->Execute($s);
+            if (!$ok)
+                if ($this->neverAbort) $ret = false;
+                else return false;
+        }
+
+if ($bar)
+    if ($foo) echo 'hi'; // lol
+
+if ($level == 'district')
+    \DB::update(<<<EOD
+some
+text
+here
+EOD
+    );
+
+if ($level == 'district')
+    $var = <<<EOD
+some
+text
+here
+EOD;

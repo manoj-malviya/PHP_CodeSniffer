@@ -715,3 +715,88 @@ public function specifiedArray(array $values) {
 public function callableCallback(callable $cb) {
 
 }// end callableCallback()
+
+/**
+ * PHP7 type hints.
+ *
+ * @param string  $name1 Comment.
+ * @param integer $name2 Comment.
+ * @param float   $name3 Comment.
+ * @param boolean $name4 Comment.
+ *
+ * @return void
+ */
+public function myFunction (string $name1, int $name2, float $name3, bool $name4) {
+}
+
+/**
+ * Variadic function.
+ *
+ * @param string $name1    Comment.
+ * @param string ...$name2 Comment.
+ *
+ * @return void
+ */
+public function myFunction(string $name1, string ...$name2) {
+}
+
+
+/**
+ * Variadic function.
+ *
+ * @param string $name1 Comment.
+ * @param string $name2 Comment.
+ *
+ * @return void
+ */
+public function myFunction(string $name1, string ...$name2) {
+}
+
+/**
+ * Return description function + correct type.
+ *
+ * @return integer This is a description.
+ */
+public function myFunction() {
+    return 5;
+}
+
+/**
+ * Return description function + incorrect type.
+ *
+ * @return int This is a description.
+ */
+public function myFunction() {
+    return 5;
+}
+
+/**
+ * Return description function + no return.
+ *
+ * @return void This is a description.
+ */
+public function myFunction() {
+}
+
+/**
+ * Return description function + mixed return.
+ *
+ * @return mixed This is a description.
+ */
+public function myFunction() {
+}
+
+/**
+ * Function comment.
+ *
+ * @param $bar
+ *   Comment here.
+ * @param ...
+ *   Additional arguments here.
+ *
+ * @return
+ *   Return value
+ *
+ */
+function foo($bar) {
+}

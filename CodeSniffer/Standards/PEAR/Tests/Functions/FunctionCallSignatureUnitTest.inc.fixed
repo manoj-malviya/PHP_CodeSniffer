@@ -264,3 +264,49 @@ $this->log(// ...
         ]
     ); ?>
 </div>
+
+<?php
+if (true) {
+    $test = '
+   ' . function_0(
+        $argument_0
+    );
+}
+
+if (true) {
+    $test = '
+   ' . function_0(
+        $argument_0,
+        $argument_1
+    );
+}
+
+myFunction(
+    'foo', (object) array(
+        'bar' => function ($x) {
+            return true;
+        },
+        'baz' => false
+    )
+);
+$qux = array_filter(
+    $quux, function ($x) {
+        return $x;
+    }
+);
+
+array_filter(
+    [1, 2],
+    function ($i) : bool {
+        return $i === 0;
+    }
+);
+
+foo(
+    array(
+    'callback' => function () {
+        $foo = 'foo';
+        return;
+    },
+    )
+);

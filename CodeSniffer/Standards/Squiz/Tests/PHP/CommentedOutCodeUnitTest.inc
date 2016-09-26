@@ -81,3 +81,9 @@ function myFunction()
 */
 
 // http://www.google.com
+
+// Base config function.
+
+// function ()
+
+// T_STRING is not a function call or not listed in _getFunctionListWithCallableArgument().
