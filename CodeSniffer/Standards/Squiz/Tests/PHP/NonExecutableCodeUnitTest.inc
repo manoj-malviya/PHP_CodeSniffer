@@ -134,6 +134,7 @@ switch ($var) {
 }
 
 defined('FOO') or die('error');
+defined('FOO') || die('error');
 interface myInterface {
     function myFunc();
 }
@@ -214,6 +215,16 @@ function foo()
     return $bar->{$action . 'JsonAction'}();
 }
 
+switch (true) {
+    case 1:
+        return foo(
+            function () {
+                $foo = $bar;  // when this is removed it works ok
+                return false; // from here on it reports unreachable
+            }
+        );
+}
+
 exit();
 
 
@@ -243,4 +254,8 @@ function bar() {
     };
 }
 
-?>
+class HttpStatus
+{
+    const CONTINUE = 100;
+    const SWITCHING_PROTOCOLS = 101;
+}

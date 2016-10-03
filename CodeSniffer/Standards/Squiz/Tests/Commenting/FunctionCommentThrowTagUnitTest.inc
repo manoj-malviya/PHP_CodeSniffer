@@ -250,4 +250,39 @@ class Foo {
         }
     }
 }
-?>
+
+class Test
+{
+    /**
+     * Folder name.
+     *
+     * @var string
+     */
+    protected $folderName;
+
+    protected function setUp()
+    {
+        parent::setUp();
+
+        if ( !strlen($this->folderName) ) {
+            throw new \RuntimeException('The $this->folderName must be specified before proceeding.');
+        }
+    }
+
+    /*
+     *
+     */
+    protected function foo()
+    {
+    }
+
+    /**
+     * @return Closure
+     */
+    public function getStuff()
+    {
+        return function () {
+            throw new RuntimeException("bam!");
+        };
+    }
+}

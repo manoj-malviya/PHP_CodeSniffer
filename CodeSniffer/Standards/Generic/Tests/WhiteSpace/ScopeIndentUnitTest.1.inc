@@ -935,12 +935,218 @@ switch ($foo) {
         return $param[0][0];
 }
 
+class Test {
+
+    public
+        $foo
+        ,$bar
+        ,$baz = [ ]
+        ;
+
+    public function wtfindent() {
+    }
+}
+
 switch ($x) {
     case 1:
         return [1];
     default:
         return [2];
 }
+
+switch ($foo) {
+    case self::FOO:
+        return $this->bar($gfoo, function ($id) {
+            return FOO::bar($id);
+        }, $values);
+    case self::BAR:
+        $values = $this->bar($foo, $values);
+        break;
+}
+
+$var = array(
+    'long description' =>
+        array(0, 'something'),
+    'another long description' =>
+        array(1, "something else")
+);
+
+$services = array(
+    'service 1' =>
+        Mockery::mock('class 1')
+            ->shouldReceive('setFilter')->once()
+            ->shouldReceive('getNbResults')->atLeast()->once()
+            ->shouldReceive('getSlice')->once()->andReturn(array())
+            ->getMock(),
+    'service 2' =>
+        Mockery::mock('class 2')
+            ->shouldReceive('__invoke')->once()
+            ->getMock()
+);
+
+class Foo
+{
+    public function setUp()
+    {
+        $this->foo = new class {
+            public $name = 'Some value';
+        };
+    }
+}
+
+try {
+    foo();
+} catch (\Exception $e) {
+    $foo = function() {
+        return 'foo';
+    }
+
+    if (true) {
+    }
+}
+
+if ($foo) {
+    foo();
+} else if (\Exception $e) {
+    $foo = function() {
+        return 'foo';
+    }
+
+    if (true) {
+    }
+} else {
+    $foo = function() {
+        return 'foo';
+    }
+
+    if (true) {
+    }
+}
+
+switch ($parameter) {
+    case null:
+        return [
+            'foo' => in_array(
+                'foo',
+                []
+            ),
+        ];
+
+    default:
+        return [];
+}
+
+class SomeClass
+{
+    public function someFunc()
+    {
+        a(function () {
+            echo "a";
+        })->b(function () {
+            echo "b";
+        });
+
+        if (true) {
+            echo "c";
+        }
+        echo "d";
+    }
+}
+
+$params = self::validate_parameters(self::read_competency_framework_parameters(),
+                                    array(
+                                        'id' => $id,
+                                    ));
+
+$framework = api::read_framework($params['id']);
+self::validate_context($framework->get_context());
+$output = $PAGE->get_renderer('tool_lp');
+
+class Test123
+{
+    protected static
+        $prop1 = [
+            'testA' => 123,
+        ],
+        $prop2 = [
+            'testB' => 456,
+        ],
+
+    protected static
+        $prop3 = array(
+            'testA' => 123,
+        ),
+        $prop4 = array(
+            'testB' => 456,
+        ),
+
+    protected static $prop5;
+}
+
+$foo = foo(
+    function () {
+        $foo->debug(
+            $a,
+            $b
+        );
+
+        if ($a) {
+            $b = $a;
+        }
+    }
+);
+
+if (somethingIsTrue()) {
+    ?>
+    <div>
+        <?php
+        $someVar = doSomething(
+            'foobar',
+            true,
+            'foo',
+            'bar'
+        );
+
+        if (somethingElseIsTrue()) {
+            doOneThing();
+        } else {
+            doTheOtherThing();
+        }
+        ?>
+    </div>
+    <?php
+}
+
+$foo = [
+        new class() implements Bar {
+
+            public static function foo(): string
+            {
+                return 'foo';
+            }
+        },
+];
+
+$foo = [
+        function () {
+            if ($foo) {
+                return 'foo';
+            }
+        },
+];
+
+$foo = foo(
+    function () {
+        $foo->debug(
+            $a,
+            $b
+    );
+
+        if ($a) {
+            $b = $a;
+        }
+    }
+);
 
     function foo()
     {

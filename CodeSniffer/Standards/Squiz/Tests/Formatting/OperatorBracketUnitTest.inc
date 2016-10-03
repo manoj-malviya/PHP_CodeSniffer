@@ -143,3 +143,11 @@ $var = [-1];
 $var = [0, -1, -2];
 
 $cntPages = ceil(count($items) / self::ON_PAGE);
+
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+error_reporting(E_ALL & ~E_NOTICE | ~E_WARNING);
+foo(1 + 2 + 3);
+
+if (empty($foo[-1]) === true) {
+    $foo[-1] = 'foo';
+}

@@ -111,3 +111,44 @@ if (array_filter(
 )) {
     // Do something
 }
+
+function foo( // comment
+    $bar,
+    $baz
+) { // comment
+    // ...
+}
+
+function foo($bar = [
+    1,
+    2,
+], $foo)
+{
+    // body
+}
+
+$foo = function ($bar = [
+    1,
+    2,
+]) use ($longVar1, $longerVar2) {
+    // body
+};
+
+function foo($bar = [
+    1,
+    2,
+],
+$foo)
+{
+    // body
+}
+
+function foo(
+    $bar = [
+        1,
+        2,
+    ],
+    $foo
+) {
+    // body
+}

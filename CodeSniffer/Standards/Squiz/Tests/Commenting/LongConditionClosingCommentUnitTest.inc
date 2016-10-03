@@ -7,7 +7,7 @@ function long_function()
         // IF statement
         // that does
         // not have
-        // and ELSE
+        // an ELSE
         // block on it
         $variable = 'hello';
 
@@ -30,7 +30,7 @@ function long_function()
         // IF statement
         // that does
         // not have
-        // and ELSE
+        // an ELSE
         // block on it
         $variable = 'hello';
 
@@ -53,7 +53,7 @@ function long_function()
         // IF statement
         // that does
         // not have
-        // and ELSE
+        // an ELSE
         // block on it
         $variable = 'hello';
 
@@ -78,7 +78,7 @@ function long_function()
         // IF statement
         // that does
         // not have
-        // and ELSE
+        // an ELSE
         // block on it
         $variable = 'hello';
 
@@ -242,7 +242,7 @@ if ($longFunction) {
     // IF statement
     // that does
     // not have
-    // and ELSE
+    // an ELSE
     // block on it
     $variable = 'hello';
 
@@ -265,7 +265,7 @@ if ($longFunction) {
     // IF statement
     // that does
     // not have
-    // and ELSE
+    // an ELSE
     // block on it
     $variable = 'hello';
 
@@ -763,3 +763,172 @@ switch ($foo) {
         echo $foo;
         break;
 }
+
+// @codingStandardsChangeSetting Squiz.Commenting.LongConditionClosingComment lineLimit 5
+// @codingStandardsChangeSetting Squiz.Commenting.LongConditionClosingComment commentFormat //Dragonbait-%s
+
+function quite_long_function()
+{
+	// Ok - below limit
+    if ($longFunction) {
+        $variable = 'hello';
+	}
+
+	// Ok - correct comment
+    if ($longFunction) {
+        // This is a long
+        // IF statement
+        // that does
+        // not have
+        // an ELSE
+        // block on it
+    }//Dragonbait-if
+
+	// This should be caught - wrong comment
+    if ($longFunction) {
+        // This is a long
+        // IF statement
+        // that does
+        // not have
+        // an ELSE
+        // block on it
+        $variable = 'hello';
+    } else {
+        // Short ELSE
+    }//end if
+
+	// This should be caught - no comment
+    if ($longFunction) {
+        // This is a long
+        // IF statement
+        // that does
+        // not have
+        // an ELSE
+        // block on it
+        $variable = 'hello';
+    } else {
+        // Short ELSE
+    }
+}
+
+// @codingStandardsChangeSetting Squiz.Commenting.LongConditionClosingComment lineLimit 30
+// @codingStandardsChangeSetting Squiz.Commenting.LongConditionClosingComment commentFormat // Bye-Bye %s()
+
+// Ok - below limit
+foreach ($var as $val) {
+    // Line 1
+    // Line 2
+    // Line 3
+    // Line 4
+    // Line 5
+    // Line 6
+    // Line 7
+    // Line 8
+    // Line 9
+    // Line 10
+}
+
+// Ok - has correct comment
+foreach ($var as $val) {
+    // Line 1
+    // Line 2
+    // Line 3
+    // Line 4
+    // Line 5
+    // Line 6
+    // Line 7
+    // Line 8
+    // Line 9
+    // Line 10
+    // Line 11
+    // Line 12
+    // Line 13
+    // Line 14
+    // Line 15
+    // Line 16
+    // Line 17
+    // Line 18
+    // Line 19
+    // Line 20
+    // Line 21
+    // Line 22
+    // Line 23
+    // Line 24
+    // Line 25
+    // Line 26
+    // Line 27
+    // Line 28
+    // Line 29
+    // Line 30
+}// Bye-Bye foreach()
+
+// This should be caught - wrong comment
+foreach ($var as $val) {
+    // Line 1
+    // Line 2
+    // Line 3
+    // Line 4
+    // Line 5
+    // Line 6
+    // Line 7
+    // Line 8
+    // Line 9
+    // Line 10
+    // Line 11
+    // Line 12
+    // Line 13
+    // Line 14
+    // Line 15
+    // Line 16
+    // Line 17
+    // Line 18
+    // Line 19
+    // Line 20
+    // Line 21
+    // Line 22
+    // Line 23
+    // Line 24
+    // Line 25
+    // Line 26
+    // Line 27
+    // Line 28
+    // Line 29
+    // Line 30
+}//end foreach
+
+// This should be caught - no comment
+foreach ($var as $val) {
+    // Line 1
+    // Line 2
+    // Line 3
+    // Line 4
+    // Line 5
+    // Line 6
+    // Line 7
+    // Line 8
+    // Line 9
+    // Line 10
+    // Line 11
+    // Line 12
+    // Line 13
+    // Line 14
+    // Line 15
+    // Line 16
+    // Line 17
+    // Line 18
+    // Line 19
+    // Line 20
+    // Line 21
+    // Line 22
+    // Line 23
+    // Line 24
+    // Line 25
+    // Line 26
+    // Line 27
+    // Line 28
+    // Line 29
+    // Line 30
+}
+
+// @codingStandardsChangeSetting Squiz.Commenting.LongConditionClosingComment lineLimit 20
+// @codingStandardsChangeSetting Squiz.Commenting.LongConditionClosingComment commentFormat //end %s

@@ -69,6 +69,12 @@ class PEAR_Tests_Commenting_FunctionCommentUnitTest extends AbstractSniffUnitTes
                 206 => 1,
                 234 => 1,
                 272 => 1,
+                313 => 1,
+                317 => 1,
+                324 => 1,
+                327 => 1,
+                329 => 1,
+                332 => 1,
                );
 
     }//end getErrorList()
