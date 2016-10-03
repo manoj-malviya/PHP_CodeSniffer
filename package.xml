@@ -2325,6 +2325,16 @@ http://pear.php.net/dtd/package-2.0.xsd">
       </dir>
       <file baseinstalldir="PHP" name="ruleset.xml" role="php" />
      </dir>
+     <dir name="Yii2">
+      <dir name="Sniffs">
+       <dir name="Files">
+        <file baseinstalldir="PHP" name="DisallowLongArraySyntaxSniff.php" role="php">
+         <tasks:replace from="@package_version@" to="version" type="package-info" />
+        </file>
+       </dir>
+      </dir>
+      <file baseinstalldir="PHP" name="ruleset.xml" role="php" />
+     </dir>
      <file baseinstalldir="PHP" name="AbstractPatternSniff.php" role="php">
       <tasks:replace from="@package_version@" to="version" type="package-info" />
      </file>
