@@ -21,7 +21,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.x-dev"
+            "dev-master": "2.4"
         }
     },
     "autoload": {
@@ -48,7 +48,8 @@
             "CodeSniffer/Standards/PSR1/Sniffs/",
             "CodeSniffer/Standards/PSR2/Sniffs/",
             "CodeSniffer/Standards/Squiz/Sniffs/",
-            "CodeSniffer/Standards/Zend/Sniffs/"
+            "CodeSniffer/Standards/Zend/Sniffs/",
+            "CodeSniffer/Standards/Yii2/Sniffs"
         ]
     },
     "require": {
